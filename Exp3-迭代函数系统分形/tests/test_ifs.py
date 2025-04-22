@@ -8,8 +8,8 @@ import numpy as np
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 # 导入学生代码或参考代码
-#from ifs import get_fern_params, get_tree_params, apply_transform, run_ifs
-from solution.ifs_solution import get_fern_params, get_tree_params, apply_transform, run_ifs
+from ifs import get_fern_params, get_tree_params, apply_transform, run_ifs
+#from solution.ifs_solution import get_fern_params, get_tree_params, apply_transform, run_ifs
 
 class TestIFS(unittest.TestCase):
     def test_fern_params(self):

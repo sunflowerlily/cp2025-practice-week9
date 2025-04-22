@@ -11,8 +11,8 @@ import matplotlib.pyplot as plt  # 添加这行导入
 
 # 添加父目录到路径，以便导入学生代码
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from solution.L_system_solution import apply_rules, draw_l_system  # 从solution文件夹中导入
-#from L_system import apply_rules, draw_l_system                    # 从当前文件夹中导入
+#from solution.L_system_solution import apply_rules, draw_l_system  # 从solution文件夹中导入
+from L_system import apply_rules, draw_l_system                    # 从当前文件夹中导入
 
 
 

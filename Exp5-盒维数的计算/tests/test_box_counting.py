@@ -9,9 +9,9 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
 
 # 导入解决方案代码  
-from solution.box_counting_solution import load_and_binarize_image, box_count, calculate_fractal_dimension
+#from solution.box_counting_solution import load_and_binarize_image, box_count, calculate_fractal_dimension
 # 导入学生代码
-#from box_counting import load_and_binarize_image, box_count, calculate_fractal_dimension
+from box_counting import load_and_binarize_image, box_count, calculate_fractal_dimension
 
 
 class TestBoxCounting(unittest.TestCase):

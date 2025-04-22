@@ -8,8 +8,8 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent.parent))
 
 # 尝试导入学生代码，失败时导入参考解决方案
-#from mandelbrot_julia import generate_mandelbrot, generate_julia
-from solution.mandelbrot_julia_solution import generate_mandelbrot, generate_julia
+from mandelbrot_julia import generate_mandelbrot, generate_julia
+#from solution.mandelbrot_julia_solution import generate_mandelbrot, generate_julia
 
 class TestFractals(unittest.TestCase):
     def test_mandelbrot_shape(self):
