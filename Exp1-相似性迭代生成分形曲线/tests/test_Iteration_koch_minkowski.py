@@ -6,8 +6,8 @@ import unittest
 
 # 添加父目录到路径，以便导入学生代码
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-#from solution.Iteration_koch_minkowski_solution import koch_generator, minkowski_generator
-from Iteration_koch_minkowski import koch_generator, minkowski_generator
+from solution.Iteration_koch_minkowski_solution import koch_generator, minkowski_generator
+#from Iteration_koch_minkowski import koch_generator, minkowski_generator
 
 class TestFractalCurves(unittest.TestCase):
     def test_koch_generator_level1(self):

@@ -8,8 +8,11 @@ from pathlib import Path
 # 添加父目录到Python路径
 sys.path.append(str(Path(__file__).parent.parent))
 
-# 导入解决方案代码
-from solution.box_counting_solution import load_and_binarize_image, box_count, calculate_fractal_dimension, plot_log_log
+# 导入解决方案代码  
+from solution.box_counting_solution import load_and_binarize_image, box_count, calculate_fractal_dimension
+# 导入学生代码
+#from box_counting import load_and_binarize_image, box_count, calculate_fractal_dimension
+
 
 class TestBoxCounting(unittest.TestCase):
     @classmethod

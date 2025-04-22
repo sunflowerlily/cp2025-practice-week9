@@ -10,14 +10,23 @@ import subprocess
 import pytest
 from pathlib import Path
 
-# 定义测试文件和分数
+# 更新测试配置以匹配实际分形项目结构
 TESTS = [
-    {"name": "实验一: 二次方程求根稳定性", "file": "Exp1_QuadraticRoots/tests/test_quadratic.py", "points": 10},
-    {"name": "实验二: 数值微分误差权衡", "file": "Exp2_NumericalDifferentiation/tests/test_differentiation.py", "points": 10},
-    {"name": "实验三: 数值积分收敛性", "file": "Exp3_NumericalIntegration/tests/test_integration.py", "points": 10},
-    {"name": "实验四: 调和级数求和顺序", "file": "Exp4_HarmonicSum/tests/test_harmonic_sum.py", "points": 10},
-    {"name": "实验五: 不同形式级数比较", "file": "Exp5_SeriesComparison/tests/test_series_sum.py", "points": 10},
-    {"name": "实验六: 贝塞尔函数递推稳定性", "file": "Exp6_BesselRecursion/tests/test_bessel_recursion.py", "points": 10}
+    {"name": "实验一: 相似性迭代生成分形曲线", 
+     "file": "Exp1-相似性迭代生成分形曲线/tests/test_Iteration_koch_minkowski.py", 
+     "points": 10},
+    {"name": "实验二: L系统生成分形", 
+     "file": "Exp2-L系统分形/tests/test_L_system.py", 
+     "points": 10},
+    {"name": "实验三: 迭代函数系统分形", 
+     "file": "Exp3-迭代函数系统分形/tests/test_ifs.py", 
+     "points": 10},
+    {"name": "实验四: 曼德勃罗特集和朱利亚集", 
+     "file": "Exp4-曼德勃罗特集和朱利亚集分形/tests/test_mandelbrot_julia.py", 
+     "points": 10},
+    {"name": "实验五: 盒维数计算", 
+     "file": "Exp5-盒维数的计算/tests/test_box_counting.py", 
+     "points": 10}
 ]
 
 def run_test(test_file):
