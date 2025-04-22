@@ -72,8 +72,7 @@ if __name__ == "__main__":
         axs[i//2, i%2].axis('off')
     
     plt.tight_layout()
-    plt.savefig("koch_curves.png")
-    plt.close()
+    plt.show()
 
     # 生成不同层级的Minkowski香肠
     fig, axs = plt.subplots(2, 2, figsize=(10, 10))
@@ -85,5 +84,4 @@ if __name__ == "__main__":
         axs[i//2, i%2].axis('off')
     
     plt.tight_layout()
-    plt.savefig("minkowski_sausages.png")
-    plt.close()
+    plt.show()
