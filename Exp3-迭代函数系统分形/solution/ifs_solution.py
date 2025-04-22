@@ -53,22 +53,25 @@ def run_ifs(ifs_params, num_points=100000, num_skip=100):
             
     return points
 
-def plot_ifs(points, title="IFS Fractal"):
-    """绘制IFS分形"""
+def plot_ifs(points, title="IFS Fractal", save_path=None):
+    """绘制IFS分形并保存为PNG"""
     plt.figure(figsize=(8, 8))
     plt.scatter(points[:,0], points[:,1], s=1, c='green', alpha=0.75)
     plt.title(title)
     plt.axis('equal')
     plt.axis('off')
+    
+    if save_path:
+        plt.savefig(save_path, bbox_inches='tight', dpi=300)
     plt.show()
 
 if __name__ == "__main__":
     # 生成并绘制巴恩斯利蕨
     fern_params = get_fern_params()
     fern_points = run_ifs(fern_params)
-    plot_ifs(fern_points, "Barnsley Fern")
+    plot_ifs(fern_points, "Barnsley Fern", "barnsley_fern.png")
     
     # 生成并绘制概率树
     tree_params = get_tree_params()
     tree_points = run_ifs(tree_params)
-    plot_ifs(tree_points, "Probability Tree")
+    plot_ifs(tree_points, "Probability Tree", "probability_tree.png")
